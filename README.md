@@ -779,3 +779,204 @@ e862868 (origin/ft/service-redesign, main, ft/service-redesign) saved the index 
 
 Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/my-private (ft/faq-page)
 $
+ 
+ 
+ ## this is the begging of the quastion four 
+ Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (main)
+$ git switch ft/team-page
+Switched to a new branch 'ft/team-page'
+branch 'ft/team-page' set up to track 'origin/ft/team-page'.
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (ft/team-page)
+$ git branch
+* ft/team-page
+  main
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (ft/team-page)
+$ git switch ft/contact-page
+Switched to a new branch 'ft/contact-page'
+branch 'ft/contact-page' set up to track 'origin/ft/contact-page'.
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (ft/contact-page)
+$ git switch ft/faq-page
+Switched to a new branch 'ft/faq-page'
+branch 'ft/faq-page' set up to track 'origin/ft/faq-page'.
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (ft/faq-page)
+$ git switch ft/service-redesign
+Switched to a new branch 'ft/service-redesign'
+branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (ft/service-redesign)
+$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (main)
+$ git remote add git-copy https://github.com/jeremiech/the-gym-repos-dedicated.git
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (main)
+$ git remote -v
+git-copy        https://github.com/jeremiech/the-gym-repos-dedicated.git (fetch)
+git-copy        https://github.com/jeremiech/the-gym-repos-dedicated.git (push)
+origin  https://github.com/jeremiech/the-gym-repos-dedicated.git (fetch)
+origin  https://github.com/jeremiech/the-gym-repos-dedicated.git (push)
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (main)
+$ git status -s
+ M .gitignore
+?? home.html
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (main)
+$ git add home.html
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (main)
+$ git status -s
+ M .gitignore
+A  home.html
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (main)
+$ git commit -m "cache  this home file"
+[main 25e5e1b] cache  this home file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 home.html
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (main)
+$ git remote -v
+git-copy        https://github.com/jeremiech/the-gym-repos-dedicated.git (fetch)
+git-copy        https://github.com/jeremiech/the-gym-repos-dedicated.git (push)
+origin  https://github.com/jeremiech/the-gym-repos-dedicated.git (fetch)
+origin  https://github.com/jeremiech/the-gym-repos-dedicated.git (push)
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (main)
+$ git remote add both https://github.com/jeremiech/the-gym-repos-dedicated.git
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (main)
+$ git remote set-url --add --push both https://github.com/jeremiech/the-gym-repos-dedicated.git
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (main)
+$ git remote set-url --add --push both https://github.com/jeremiech/the-gym-repos-dedicated.git
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (main)
+$ git push -u both main --force
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 301 bytes | 43.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/jeremiech/the-gym-repos-dedicated.git
+   5492052..25e5e1b  main -> main
+branch 'main' set up to track 'both/main'.
+Everything up-to-date
+branch 'main' set up to track 'both/main'.
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (main)
+$ git branch ft/footer
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (main)
+$ git checkout ft/footer
+Switched to branch 'ft/footer'
+M       .gitignore
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (ft/footer)
+$ git commit -am "modify home file"
+[ft/footer 9bddb4b] modify home file
+ 2 files changed, 3 insertions(+), 2 deletions(-)
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (ft/footer)
+$ git commit -am "make new change for home file"
+[ft/footer 4e7eda0] make new change for home file
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (ft/footer)
+$ git push origin -u ft/footer --force
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 638 bytes | 53.00 KiB/s, done.
+Total 7 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/jeremiech/the-gym-repos-dedicated/pull/new/ft/footer
+remote:
+To https://github.com/jeremiech/the-gym-repos-dedicated.git
+ * [new branch]      ft/footer -> ft/footer
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (ft/footer)
+$ git branch ft/squashing
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (ft/footer)
+$ git switch ft/squashing
+Switched to branch 'ft/squashing'
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (ft/squashing)
+$ git switch ft/footer
+Switched to branch 'ft/footer'
+Your branch is up to date with 'origin/ft/footer'.
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (ft/footer)
+$ git commit -am "modify the index file"
+[ft/footer d4ea6c2] modify the index file
+ 1 file changed, 1 insertion(+), 12 deletions(-)
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (ft/footer)
+$ git switch ft/squashing
+Switched to branch 'ft/squashing'
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (ft/squashing)
+$ git switch ft/footer
+Switched to branch 'ft/footer'
+Your branch is ahead of 'origin/ft/footer' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (ft/footer)
+$ git commit -am "modify home page more " --amend
+[ft/footer 6bfa451] modify home page more
+ Date: Fri May 19 16:22:37 2023 +0200
+ 2 files changed, 2 insertions(+), 13 deletions(-)
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (ft/footer)
+$ git checkout ft/squashing
+Switched to branch 'ft/squashing'
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (ft/squashing)
+$ git merge ft/footer
+Updating 4e7eda0..6bfa451
+Fast-forward
+ home.html  |  2 +-
+ index.html | 13 +------------
+ 2 files changed, 2 insertions(+), 13 deletions(-)
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (ft/squashing)
+$ git commit -am "footer changes squashing"
+[ft/squashing 02f61e4] footer changes squashing
+ 1 file changed, 2 insertions(+)
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (ft/squashing)
+$ git push -u origin ft/squashing 
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 771 bytes | 30.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/jeremiech/the-gym-repos-dedicated/pull/new/ft/squashing
+remote:
+To https://github.com/jeremiech/the-gym-repos-dedicated.git
+ * [new branch]      ft/squashing -> ft/squashing
+branch 'ft/squashing' set up to track 'origin/ft/squashing'.
+
+Izere@DESKTOP-9TB6QQ1 MINGW64 ~/Documents/on-firday/the-gym-repos-dedicated (ft/squashing)
+$
+ 
+ 
+ 
+ 
