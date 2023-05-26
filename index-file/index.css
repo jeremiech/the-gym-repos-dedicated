@@ -1,0 +1,254 @@
+.clear-fix{
+    clear: both;
+    content: "";
+    display: table;
+    box-sizing: border-box;
+}
+.container{
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(./images/kgl.jpeg);
+    background-position:center;
+    background-size:cover;
+    height: 95vh;
+    width: 99vw;
+    float: left;
+    padding: 0 3rem;
+
+
+    
+
+}
+
+.header-section {
+    height: 2rem;
+    width: 100%;
+}
+.header-section .icons{
+    width:10%;
+    height:1.4rem; 
+    float: left;
+}
+.icons p{
+    float: left;
+    font-size: medium;
+   
+}
+.header-section .nav-bar {
+    width:50%;
+    margin: auto;
+    height:1.4rem;
+}
+
+.header-section #bg-changer{
+    width:5em;
+    background-color: #ff7720;
+    padding:1em 0;
+    text-align: center;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+    border: none;
+
+
+
+
+
+}
+#bg-changer:hover{
+    cursor: pointer;
+}
+.header-section .nav-bar ul{
+    
+    float: left;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+ul li{
+    list-style-type: none;
+    font-size: medium;
+    padding:10px;
+
+    
+
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.header-section .search-side{
+    width: 30%;
+    margin-left: 5%;
+    float: left;
+    margin-top: -15px;
+
+
+}
+.search-side .src{
+    width:60%;
+    margin-left: 0;
+    border-top-left-radius:5px ;
+    border-bottom-left-radius:5px ;
+    outline:none;
+    border: 1px solid #ff7720;
+    height: 2em;
+    padding-left: .5rem;
+    background-color: transparent;
+    color: #ff7720;
+    
+
+
+}
+.search-side .btn{
+    width:20%;
+    background-color: #ff7720;
+    height: 2em;
+    border-left: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+    border: none;
+
+
+
+}
+
+.container .body-side{
+    width:inherit;
+}
+.body-side .marketing-side{
+    width: 50%;
+    float: left;
+
+}
+.marketing-side p{
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+
+.marketing-side p span{
+    color:#ff7720
+}.marketing-side section{
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+    font-size: 1.1rem;
+}
+.body-side .reachus{
+    float: left;
+    width:40%;
+    margin-left: 5%;
+
+}
+.reachus .form-to-submit{
+    float: right;
+    width:17em;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+    margin-top: 2em;
+    height:26em;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-right: 12rem;
+
+
+
+
+}
+
+
+.form-to-submit input{
+    width: 80%;
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    margin: auto;
+    margin-top: 1.4em;
+    border: none;
+    color:white;
+    font-size: 1em;
+    padding-left: .4em;
+    border-bottom: 1px solid#ff7720;
+    background: transparent;
+
+
+
+}
+.form-to-submit input:focus{
+    outline: none;
+}
+
+.form-to-submit .header-part{
+    width: 80%;
+    height: 2.2em;
+    background: #ff7720;
+    margin: auto;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 4px 10px;
+    text-align: center;
+    margin-bottom: 2rem;
+
+}
+.header-part p{
+    color:white;
+}
+
+@media screen and (max-width:600px ){
+   .container{
+    float: none;
+    /* overflow:visible; */
+    display: flex;
+    scroll-margin-bottom: none;
+    flex-direction: none;
+    padding: 1rem;
+    height:100%;
+    overflow-x: hidden;
+   }
+   .header-section{
+    display: none;
+   }
+   .container .body-side{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+   }
+   .body-side .marketing-side{
+    width: 100%;
+    float: none;
+
+}
+   .body-side .reachus{
+    float: none;
+    width:100%;
+
+}
+.reachus .form-to-submit{
+    float: none;
+    width:100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+    margin-top: 2em;
+    height:18em;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: auto;
+    margin-top: 3rem;
+
+
+
+
+}
+
+}
+
+
